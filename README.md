@@ -92,22 +92,22 @@
 
 Skill 首先查询附近门店，再结合当前时段拉取菜单并生成推荐结果。
 
-![查询天通苑附近门店](https://files.mdnice.com/user/47561/11569600-89d7-4e70-aba3-39a10097c2c1.png)
+![查询天通苑附近门店](/img/image.png)
 
-![生成套餐推荐结果](https://files.mdnice.com/user/47561/080a2ebe-b11f-4763-9a1b-945ffc5b4590.png)
+![生成套餐推荐结果](./img/image%20copy.png)
 
 确认推荐内容后，继续输入下单指令。由于这是一次真实写操作，Skill 会等待明确确认，再调用 `create-order`。
 
-![确认下单](https://files.mdnice.com/user/47561/7436e44e-557f-4d80-aa41-bbcb829a31ed.png)
+![确认下单](./img/确认下单.png)
 
-![生成订单和支付链接](https://files.mdnice.com/user/47561/cbd2c960-701e-4e63-b8af-208ac5a7aed6.png)
+![生成订单和支付链接](./img//生成订单和支付链接.png)
 
 打开返回的支付链接后，页面会展示付款二维码。
 
-![打开支付二维码](https://files.mdnice.com/user/47561/9eb04302-729c-4c9c-b343-283a7a28f301.png)
+![打开支付二维码](./img//打开支付二维码.png)
 
 使用手机扫码后，可以看到推荐商品已经加入购物车，核对订单后即可完成支付。
 
-![手机扫码后的订单页面](https://files.mdnice.com/user/47561/e0a023aa-80f9-460d-ba5a-8c031b049e8e.jpg)
+![手机扫码后的订单页面](./img//手机扫码后的订单页面.png)
 
 这次联调验证了“查门店—推荐套餐—用户确认—创建订单—跳转支付”的闭环。它也说明，LLM 在这个项目中负责理解需求和编排流程，真正决定菜单、价格与订单状态的仍然是 MCP 提供的实时业务接口。
